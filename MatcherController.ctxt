@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=MatcherController
+comment0.text=\ Create\ and\ manipulate\ Markov\ models\ and\ model\ matchers\ for\ lists\ of\ training\ data\ \r\n\ a\ test\ data\ String\ and\ generate\ output\ from\ it\ for\ convenient\ display.\r\n\ \r\n\ @author\ Suyash\ Vasist\ 22003936,\ Zhishen(Mike)\ Xu\ 21977643\r\n\ @version\ 29/05/2017\r\n\r\n
+comment1.params=k\ trainingDataList\ testData
+comment1.target=MatcherController(int,\ java.util.ArrayList,\ java.lang.String)
+comment1.text=\ Generate\ models\ for\ analysis\r\n\ @param\ k\ order\ of\ the\ markov\ models\ to\ be\ used\r\n\ @param\ testData\ String\ to\ check\ against\ different\ models\r\n\ @throws\ IllegalArgumentException\ if\ the\ input\ order\ or\ data\ inputs\ are\ invalid\r\n
+comment2.params=filename
+comment2.target=java.lang.String\ getFileContents(java.lang.String)
+comment2.text=\ Takes\ a\ file\ and\ returns\ the\ lines\ in\ the\ file\ as\ a\ String.\r\n\ @param\ name\ of\ the\ file\r\n\ @return\ a\ string\ containing\ all\ lines\ from\ a\ file\ \r\n\ ff\ file\ contents\ can\ be\ got,\ otherwise\ null\r\n\ This\ method\ also\ catches\ the\ FileNotFound\ and\ IO\ exceptions\ from\ the\ FileIO\ class.\r\n
+comment3.params=candidates
+comment3.target=ModelMatcher\ getBestMatch(java.util.ArrayList)
+comment3.text=\r\n\ @param\ an\ ArrayList\ of\ model\ matchers\r\n\ @return\ the\ ModelMatcher\ object\ that\ has\ the\ highest\ average\ loglikelihood\r\n\ (where\ all\ candidates\ are\ trained\ for\ the\ same\ test\ string)\r\n
+comment4.params=
+comment4.target=ModelMatcher\ getBestMatchFromList()
+comment4.text=\r\n\ @return\ the\ ModelMatcher\ object\ that\ has\ the\ highest\ average\ loglikelihood\ in\r\n\ the\ field\ variable\ matcherList\r\n
+comment5.params=best
+comment5.target=java.lang.String\ explainBestMatch(ModelMatcher)
+comment5.text=\r\n\ @param\ the\ ModelMatcher\ object\ with\ the\ highest\ log\ likelihood\ (typically\ obtained\ from\r\n\ the\ getBestMatch\ method)\r\n\ @return\ String\ an\ *explanation*\ of\r\n\ why\ the\ test\ string\ is\ the\ match\ from\ the\ candidate\ models\r\n
+comment6.params=message
+comment6.target=void\ displayError(java.lang.String)
+comment6.text=\ Display\ an\ error\ to\ the\ user\ in\ a\ manner\ appropriate\r\n\ for\ the\ interface\ being\ used.\r\n\ \r\n\ @param\ message\r\n
+numComments=7
